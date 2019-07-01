@@ -101,6 +101,6 @@ service-worker: true
 friends: [
     {
         title: "ST",
-        href: "http://salty.wang"
+        href: "http://www.salty.wang/"
     }
 ]
