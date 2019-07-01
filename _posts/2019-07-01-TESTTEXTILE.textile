@@ -10,108 +10,45 @@ tags:
     - test
 ---
 
-h1. Title Slide
+!https://travis-ci.org/textile/python-textile.svg!:https://travis-ci.org/textile/python-textile !https://coveralls.io/repos/github/textile/python-textile/badge.svg!:https://coveralls.io/github/textile/python-textile?branch=master !https://codecov.io/github/textile/python-textile/coverage.svg!:https://codecov.io/github/textile/python-textile
 
----
+h1. python-textile
 
-h1. Paragraphs
+python-textile is a Python port of "Textile":http://txstyle.org/, Dean Allen's humane web text generator.
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ultricies
-tempus ultricies. Ut porta scelerisque viverra. Pellentesque aliquam metus
-scelerisque dui ultricies, auctor dictum erat aliquet. Integer vehicula nunc
-elit, vel iaculis lorem facilisis non.
+h2. Installation
 
-Vivamus ante mauris, pellentesque et rhoncus ut, condimentum sed ipsum.
-Nullam eu molestie sapien. Curabitur imperdiet, ligula id blandit sagittis,
-libero quam consectetur felis, ac pharetra metus lectus vitae leo. Mauris
-lacinia fermentum augue.
+@pip install textile@
 
----
+Optional dependencies include:
+* "PIL/Pillow":http://python-pillow.github.io/ (for checking images size)
+* "regex":https://pypi.python.org/pypi/regex (for faster unicode-aware string matching).
 
-h1. Blockquotes
+h2. Usage
 
-bq. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ultricies
-tempus ultricies. Ut porta scelerisque viverra. Pellentesque aliquam metus
-scelerisque dui ultricies, auctor dictum erat aliquet. Integer vehicula nunc
-elit, vel iaculis lorem facilisis non.
+bc.. import textile
+>>> s = """
+... _This_ is a *test.*
+...
+... * One
+... * Two
+... * Three
+...
+... Link to "Slashdot":http://slashdot.org/
+... """
+>>> html = textile.textile(s)
+>>> print html
+	<p><em>This</em> is a <strong>test.</strong></p>
 
----
+	<ul>
+		<li>One</li>
+		<li>Two</li>
+		<li>Three</li>
+	</ul>
 
-h1. Subheadings and Emphasis
+	<p>Link to <a href="http://slashdot.org/">Slashdot</a></p>
+>>>
 
-h2. Italic
+h3. Notes:
 
-_Lorem ipsum dolor sit amet_
-
-h2. Bold
-
-*Lorem ipsum dolor sit amet*
-
----
-
-h1. Lists
-
-h2. Unordered List
-
-* Markdown
-* ReStructured Text
-* Textile
-
-h2. Ordered List
-
-# Python
-# JavaScript
-# HTML5
-
----
-
-h1. Second Title Slide
-
----
-
-h1. Code
-
-h2. Single Word
-
-Hello @World@
-
-h2. Python
-
-bc. def multiply (x, y):
-        return x * y
-
-h2. JavaScript
-
-bc. multiply: function (x, y) {
-      return x * y;
-    }
-
-h2. HTML
-
-bc. <!doctype html>
-    <html>
-      <head></head>
-      <body></body>
-    </html>
-
----
-
-h1. Images
-
-!.../_assets/landscape.jpg(Landscape)!
-
----
-
-h1. View Presenter Notes
-
-This slide has presenter notes. Press `p` to view them.
-
-h1. Presenter Notes
-
-Hello from presenter notes
-
----
-
-h1. Other features
-
-View other features in the help sidebar by pressing `h`
+* Active development supports Python 2.7 or later (including Python 3.3+).
