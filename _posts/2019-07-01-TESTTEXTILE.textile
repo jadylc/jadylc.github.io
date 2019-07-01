@@ -1,3 +1,15 @@
+---
+layout:     post
+title:      测试标题
+subtitle:   测试副标题
+date:       2019-07-01
+author:     BY Jady
+header-img: img/post-bg-cook.jpg
+catalog: true
+tags:
+    - test
+---
+
 h1. Title Slide
 
 ---
