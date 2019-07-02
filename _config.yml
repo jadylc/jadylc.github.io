@@ -46,10 +46,12 @@ plugins:
 
 
 # Markdown settings
+# textfile settings
 # replace redcarpet to kramdown,
 # although redcarpet can auto highlight code, the lack of header-id make the catalog impossible, so I switch to kramdown
 # document: http://jekyllrb.com/docs/configuration/#kramdown
 markdown: kramdown
+textile_ext: "textile,txtl,tl"
 highlighter: rouge
 kramdown:
   input: GFM                            # use Github Flavored Markdown !important
