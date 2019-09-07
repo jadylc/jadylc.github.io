@@ -11,8 +11,8 @@ github_repo: "https://github.com/jadylc/jadylc.github.io.git" # you code reposit
 
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
-sidebar-about-description: "什麽亂七八糟的"
-sidebar-avatar: /img/about-BY-gentle.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
+sidebar-about-description: "The Satan Temple"
+sidebar-avatar: /img/avatar-tst.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
 
 
 
@@ -32,7 +32,7 @@ github_username:    jadylc
 # from 2016, 'pygments' is unsupported on GitHub Pages. Use 'rouge' for highlighting instead.
 permalink: pretty
 paginate: 10
-exclude: ["less","node_modules","Gruntfile.js","package.json","README.md"]
+exclude: ["less","node_modules","Gruntfile.js","package.json","README.md"，backup]
 anchorjs: true                          # if you want to customize anchor. check out line:181 of `post.html`
 
 
@@ -106,6 +106,3 @@ friends: [
         href: "http://www.salty.wang/"
     }
 ]
-
-exclude:
-  [backup]
