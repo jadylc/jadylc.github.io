@@ -15,7 +15,7 @@ tags:
 
 ## 架构图
 
-![](../img/mysql-frame.jpg)
+![frame](../img/mysql-frame.jpg)
 
 ## 组成部分
 
